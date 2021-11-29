@@ -17,9 +17,9 @@ header {
   background-size: cover;
   height: 150px;
   width: 100%;
+  background-position-y: 30%;
   position: absolute;
   top: 0;
-  background-position-y: 30%;
   color: green;
   text-align: center;
   font-family: "Bebas Neue", Arial, sans-serif;
@@ -33,6 +33,13 @@ header h1 {
 header h2 {
   font-size: 2em;
   margin: 3px;
+}
+.content {
+  margin-top: 200px;
+  margin-left:10%;
+  margin-right: 10%;
+  width: 80%;
+  min-height: calc(100vh - 350px);
 }
 .paragraph {
   text-align: center;
@@ -52,17 +59,10 @@ header h2 {
 footer {
   background: black;
   color: #ffffff;
-  height: 50px;
-  width: 100%;
+  height: 40px;
   padding: 5px;
+  width: calc(100% - 10px);
   margin-top: 100px;
-}
-.content {
-  margin-top: 200px;
-  margin-left:10%;
-  margin-right: 10%;
-  width: 80%;
-  min-height: calc(100vh - 200px);
 }
 a:link {
   color: green;
@@ -86,13 +86,14 @@ a:active {
   </header>
 
   <div class="content">
+
     <div id="welcomecontent">
       <h2 class="paratitle">Howdy!</h2>
       <p class="paragraph">
         Welcome to my little corner of the Web. This is a site for featuring my projects.
       </p>
     </div>
-
+    
     <div class="gamecontent">
       <h2 class="paratitle">Bomb Run</h2>
       <div class="gamecover">
@@ -108,7 +109,7 @@ a:active {
         about a week and learned more about Unity as I did so.
       </p>
     </div>
-
+  
     <div class="gamecontent">
       <h2 class="paratitle">Lab Escape</h2>  
       <div class="gamecover">
@@ -122,6 +123,7 @@ a:active {
         the player’s goal is to operate a teleportation device in order to escape the evil scientist’s lab.
       </p>
     </div>
+    
   </div>
   
 <footer>
