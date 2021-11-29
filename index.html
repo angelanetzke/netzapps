@@ -20,20 +20,26 @@ header {
   background-position-y: 30%;
   position: absolute;
   top: 0;
-  color: green;
+  color: black;
   text-align: center;
   font-family: "Bebas Neue", Arial, sans-serif;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
 }
-header h1 {
-  font-size: 4em;
-  margin: 3px;
+#innerheader {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 255, 0, .6);
+  position: absolute;
+  top: 0;
 }
-header h2 {
-  font-size: 2em;
-  margin: 3px;
-}
+#innerheader h1 {
+    font-size: 4em;
+    margin: 3px;
+  }
+  #innerheader h2 {
+    font-size: 2em;
+    margin: 3px;
+  }
+
 .content {
   margin-top: 200px;
   margin-left:10%;
@@ -81,8 +87,10 @@ a:active {
 <body>
 
   <header>
-    <h1>NETZAPPS</h1>
-    <h2>Angela Netzke</h2>
+    <div id="innerheader">
+      <h1>NETZAPPS</h1>
+      <h2>Angela Netzke</h2>
+    </div>
   </header>
 
   <div class="content">
@@ -93,7 +101,7 @@ a:active {
         Welcome to my little corner of the Web. This is a site for featuring my projects.
       </p>
     </div>
-    
+
     <div class="gamecontent">
       <h2 class="paratitle">Bomb Run</h2>
       <div class="gamecover">
