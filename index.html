@@ -7,190 +7,115 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
-<style>
-body {
-    margin: 0;
-    background-color: #dddddd;
-}
-.paratitle {
-  text-align: center;
-}
-header {
-  background-image: url('keyboard.jpg');
-  background-size: cover;
-  height: 150px;
-  width: 100%;
-  background-position-y: 30%;
-  position: absolute;
-  top: 0;
-  color: black;
-  text-align: center;
-  font-family: "Bebas Neue", Arial, sans-serif;
-}
-#innerheader {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 255, 0, .6);
-  position: absolute;
-  top: 0;
-}
-#innerheader h1 {
-    font-size: 4em;
-    margin: 3px;
-  }
-  #innerheader h2 {
-    font-size: 2em;
-    margin: 3px;
-  }
-
-.content {
-  margin-top: 200px;
-  margin-left:10%;
-  margin-right: 10%;
-  width: 80%;
-  min-height: calc(100vh - 350px);
-}
-.paragraph {
-  text-align: center;
-}
-.gamecontent {
-  margin-top: 200px;
-  height: 350px;
-}
-.gamecover {
-  width: 315px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.gameparagraph {
-  padding: 5px;
-}
-footer {
-  background: black;
-  color: #ffffff;
-  height: 40px;
-  padding: 5px;
-  width: calc(100% - 10px);
-  margin-top: 100px;
-}
-a:link {
-  color: #088808;
-}
-a:visited {
-  color:#088808;
-}
-a:hover {
-  color: gold;
-}
-a:active {
-  color: gold;
-}
-</style>
+<link href="layout.css" rel="stylesheet">
 
 <body>
 
-  <header>
-    <div id="innerheader">
-      <h1>NETZAPPS</h1>
-      <h2>Angela Netzke</h2>
-    </div>
-  </header>
+	<header>
+		<div id="innerheader">
+			<h1>NETZAPPS</h1>
+			<h2>Angela Netzke</h2>
+		</div>
+	</header>
 
-  <div class="content">
+	<div class="content">
 
-    <div id="welcomecontent">
-      <h2 class="paratitle">Howdy!</h2>
-      <p class="paragraph">
-        Welcome to my little corner of the Web. This is a site for featuring my projects.
-      </p>
-    </div>
+		<div id="welcomecontent">
+			<h2 class="paratitle">Howdy!</h2>
+			<p class="paragraph">
+				Welcome to my little corner of the Web. This is a site for featuring some projects I have
+				developed. More of my work can be found on 
+				<a href="https://github.com/angelanetzke" target="_blank">Github</a>.
+			</p>
+		</div>
 
-    <div class="gamecontent">
-      <h2 class="paratitle">Bomb Run</h2>
-      <div class="gamecover">
-        <a href="https://netzapps.itch.io/bomb-run" target="_blank" class="projectlink">
-          <img src="bombruncover.png" alt="Cover of Bomb Run">
-        </a>
-    </div>
-      <p class="paragraph">        
-        The first project I published on itch.io was 
-        <a href="https://netzapps.itch.io/bomb-run" target="_blank" class="projectlink">Bomb Run</a>,
-        an arcade-style game. It was a challenge to myself
-        to get a game finished and published after practicing with the Unity game engine. I put it together in
-        about a week and learned more about Unity as I did so.
-      </p>
-    </div>
-  
-    <div class="gamecontent">
-      <h2 class="paratitle">Lab Escape</h2>  
-      <div class="gamecover">
-        <a href="https://netzapps.itch.io/lab-escape" target="_blank" class="projectlink">
-          <img src="labescpaecover.png" alt="Cover of Lab Escape">
-        </a>    
-      </div>
-      <p class="paragraph">        
-        For my second project, I decided to develop a another Unity game with puzzles for the player 
-				to solve. In 
-        <a href="https://netzapps.itch.io/lab-escape" target="_blank" class="projectlink">Lab Escape</a>,
-        the player’s goal is to operate a teleportation device in order to escape the evil scientist’s lab.
-      </p>
-    </div>
+		<div id="gamegrid">
+			<div class="gamecontent">
+				<h2 class="paratitle">Bomb Run</h2>
+				<div class="gamecover">
+					<a href="https://netzapps.itch.io/bomb-run" target="_blank" class="projectlink">
+						<img src="bombruncover.png" alt="Cover of Bomb Run">
+					</a>
+				</div>
+				<p class="paragraph">				
+					The first project I published on itch.io was 
+					<a href="https://netzapps.itch.io/bomb-run" target="_blank" class="projectlink">Bomb Run</a>,
+					an arcade-style game. It was a challenge to myself
+					to get a game finished and published after practicing with the Unity game engine. I put it together in
+					about a week and learned more about Unity as I did so.
+				</p>
+			</div>
 		
-		<div class="gamecontent">
-      <h2 class="paratitle">Legend of the Melodious Mule</h2>  
-      <div class="gamecover">
-        <a href="https://netzapps.itch.io/the-legend-of-the-melodious-mule" target="_blank" class="projectlink">
-          <img src="mulecover.png" alt="Cover of The Legend of the Melodious Mule">
-        </a>    
-      </div>
-      <p class="paragraph">        
-        I decided to expand my skills by learning the monogame framework. I created a roguelike named
-				<a href="https://netzapps.itch.io/the-legend-of-the-melodious-mule" target="_blank" class="projectlink">The Legend of the Melodious Mule</a>.
-				The player must travel through 10 levels, fighting zombies along the way, to find a bugle
-				rumored to belong to the legendary Melodious Mule. It was fun to create a roguelike because one
-				of the first games I played as a child was Rogue. The level layout of The Legend of the Melodious
-				Mule was inspired by the layout of Rogue.
-      </p>
-    </div>
+			<div class="gamecontent">
+				<h2 class="paratitle">Lab Escape</h2>	
+				<div class="gamecover">
+					<a href="https://netzapps.itch.io/lab-escape" target="_blank" class="projectlink">
+						<img src="labescpaecover.png" alt="Cover of Lab Escape">
+					</a>		
+				</div>
+				<p class="paragraph">				
+					For my second project, I decided to develop a another Unity game with puzzles for the player 
+					to solve. In 
+					<a href="https://netzapps.itch.io/lab-escape" target="_blank" class="projectlink">Lab Escape</a>,
+					the player’s goal is to operate a teleportation device in order to escape the evil scientist’s lab.
+				</p>
+			</div>
+			
+			<div class="gamecontent">
+				<h2 class="paratitle">Legend of the Melodious Mule</h2>	
+				<div class="gamecover">
+					<a href="https://netzapps.itch.io/the-legend-of-the-melodious-mule" target="_blank" class="projectlink">
+						<img src="mulecover.png" alt="Cover of The Legend of the Melodious Mule">
+					</a>		
+				</div>
+				<p class="paragraph">				
+					I decided to expand my skills by learning the monogame framework. I created a roguelike named
+					<a href="https://netzapps.itch.io/the-legend-of-the-melodious-mule" target="_blank" class="projectlink">The Legend of the Melodious Mule</a>.
+					The player must travel through 10 levels, fighting zombies along the way, to find a bugle
+					rumored to belong to the legendary Melodious Mule. It was fun to create a roguelike because one
+					of the first games I played as a child was Rogue. The level layout of The Legend of the Melodious
+					Mule was inspired by the layout of Rogue.
+				</p>
+			</div>
 
-		<div class="gamecontent">
-      <h2 class="paratitle">Chromatic Corridors</h2>  
-      <div class="gamecover">
-        <a href="https://netzapps.itch.io/chromatic-corridors" target="_blank" class="projectlink">
-          <img src="cc-cover.png" alt="Cover of Chromatic Corridors">
-        </a>    
-      </div>
-      <p class="paragraph">        
-        <a href="https://netzapps.itch.io/chromatic-corridors" target="_blank" class="projectlink">
-				Chromatic Corridors</a> is an endless puzzle game where the player navigates a maze by matching
-				color-coded keys to the corridors to traverse. I used Unity again for this project.
-      </p>
-    </div>
+			<div class="gamecontent">
+				<h2 class="paratitle">Chromatic Corridors</h2>	
+				<div class="gamecover">
+					<a href="https://netzapps.itch.io/chromatic-corridors" target="_blank" class="projectlink">
+						<img src="cc-cover.png" alt="Cover of Chromatic Corridors">
+					</a>		
+				</div>
+				<p class="paragraph">				
+					<a href="https://netzapps.itch.io/chromatic-corridors" target="_blank" class="projectlink">
+					Chromatic Corridors</a> is an endless puzzle game where the player navigates a maze by matching
+					color-coded keys to the corridors to traverse. I used Unity again for this project.
+				</p>
+			</div>
 
-		<div class="gamecontent">
-      <h2 class="paratitle">Advent Calendar</h2>  
-      <div class="gamecover">
-        <a href="https://angelanetzke.github.io/adventcalendar/" target="_blank" class="projectlink">
-          <img src="adventcover.png" alt="Cover of Advent Calendar">
-        </a>    
-      </div>
-      <p class="paragraph">        
-        Using the HTML5 canvas, I created an 
-				<a href="https://angelanetzke.github.io/adventcalendar/" target="_blank" class="projectlink">
-				Advent Calendar</a> where each day reveals a Christmas-themed photo. 
-				The calendar is only available in December.
-				The photos were taken
-				from <a href="https://www.pexels.com" target="_blank" class="projectlink">Pexels</a>.
-      </p>
-    </div>
-    
-  </div>
-  
+			<div class="gamecontent">
+				<h2 class="paratitle">Advent Calendar</h2>	
+				<div class="gamecover">
+					<a href="https://angelanetzke.github.io/adventcalendar/" target="_blank" class="projectlink">
+						<img src="adventcover.png" alt="Cover of Advent Calendar">
+					</a>		
+				</div>
+				<p class="paragraph">				
+					Using the HTML5 canvas, I created an 
+					<a href="https://angelanetzke.github.io/adventcalendar/" target="_blank" class="projectlink">
+					Advent Calendar</a> where each day reveals a Christmas-themed photo. 
+					The calendar is only available in December.
+					The photos were taken
+					from <a href="https://www.pexels.com" target="_blank" class="projectlink">Pexels</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	
 <footer>
-    Keyboard photo by 
-    <a href="https://www.pexels.com/@hitarth-jadhav-57415">Hitarth Jadhav</a>
-    from
-    <a href="https://www.pexels.com/photo/close-up-photo-of-keyboard-220357/">Pexels</a>
+		Keyboard photo by 
+		<a href="https://www.pexels.com/@hitarth-jadhav-57415">Hitarth Jadhav</a>
+		from
+		<a href="https://www.pexels.com/photo/close-up-photo-of-keyboard-220357/">Pexels</a>
 </footer>
 
 </body>

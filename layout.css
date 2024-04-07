@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	background-color: #dddddd;
+}
+.paratitle {
+	text-align: center;
+}
+header {
+	background-image: url('keyboard.jpg');
+	background-size: cover;
+	height: 150px;
+	width: 100%;
+	background-position-y: 30%;
+	position: absolute;
+	top: 0;
+	color: black;
+	text-align: center;
+	font-family: "Bebas Neue", Arial, sans-serif;
+}
+#innerheader {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 255, 0, .6);
+	position: absolute;
+	top: 0;
+}
+#innerheader h1 {
+	font-size: 4em;
+	margin: 3px;
+}
+#innerheader h2 {
+	font-size: 2em;
+	margin: 3px;
+}
+
+.content {
+	margin-top: 200px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	width: 95%;
+	min-height: calc(100vh - 350px);
+}
+.paragraph {
+	text-align: center;
+}
+#gamegrid {
+	column-width: 330px;
+}
+.gamecontent {
+	border: 1px solid green;
+	width: 325px;
+	height: 625px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
+	break-inside: avoid;
+}
+.gamecover {
+	width: 315px;
+	height: 315px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.gameparagraph {
+	padding: 5px;
+}
+footer {
+	background: black;
+	color: #ffffff;
+	height: 40px;
+	padding: 5px;
+	width: calc(100% - 10px);
+	margin-top: 100px;
+}
+a:link {
+	color: #088808;
+}
+a:visited {
+	color:#088808;
+}
+a:hover {
+	color: gold;
+}
+a:active {
+	color: gold;
+}
